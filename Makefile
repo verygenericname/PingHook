@@ -1,5 +1,5 @@
 TARGET := iphone:clang:16.4:14.5
-INSTALL_TARGET_PROCESSES = SpringBoard
+INSTALL_TARGET_PROCESSES = companionfindlocallyd
 ARCHS = arm64 arm64e
 
 include $(THEOS)/makefiles/common.mk

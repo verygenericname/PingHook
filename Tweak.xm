@@ -9,15 +9,14 @@
     NSArray *keyList = [[NSUserDefaults standardUserDefaults] persistentDomainForName:appID].allKeys;
     NSString *filepath = [defaults objectForKey:@"FilePath"];
     BOOL isEnabled = [[defaults objectForKey:@"isEnabled"]?:@NO boolValue];
-    
-    if ([URL.absoluteString containsString:@"ping.caf"]) {
-        if(isEnabled) {
+    if(isEnabled) {
+        if ([URL.absoluteString containsString:@"ping.caf"]) {
             if ([[NSFileManager defaultManager] fileExistsAtPath:filepath]) {
                 URL = [NSURL fileURLWithPath:filepath];
             }
         }
     }
-    
+
     return %orig;
 }
 

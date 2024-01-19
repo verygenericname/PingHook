@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo "Killing companionfindlocallyd..."
+killall -9 companionfindlocallyd || true

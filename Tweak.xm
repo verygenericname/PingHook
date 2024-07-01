@@ -5,8 +5,6 @@
 
 - (instancetype)initWithURL:(NSURL *)URL {
     NSDictionary* defaults = [[NSUserDefaults standardUserDefaults] persistentDomainForName:@"com.nathan.pinghook"];
-    NSString *appID = @"com.nathan.pinghook";
-    NSArray *keyList = [[NSUserDefaults standardUserDefaults] persistentDomainForName:appID].allKeys;
     NSString *filepath = [defaults objectForKey:@"FilePath"];
     BOOL isEnabled = [[defaults objectForKey:@"isEnabled"]?:@NO boolValue];
     if(isEnabled) {

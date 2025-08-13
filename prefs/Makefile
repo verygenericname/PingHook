@@ -1,7 +1,7 @@
-include $(THEOS)/makefiles/common.mk
+TARGET = iphone:clang:16.5:14.5
+ARCHS = arm64 arm64e
 
-export ARCHS = arm64 arm64e
-export TARGET = iphone:clang:16.4:14.5
+include $(THEOS)/makefiles/common.mk
 
 BUNDLE_NAME = PingHook
 $(BUNDLE_NAME)_FILES = PHRootListController.m

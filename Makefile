@@ -5,8 +5,9 @@ include $(THEOS)/makefiles/common.mk
 
 TWEAK_NAME = PingHook
 
-PingHook_FILES = Tweak.xm
-PingHook_CFLAGS = -fobjc-arc -w
+$(TWEAK_NAME)_FILES = Tweak.xm
+$(TWEAK_NAME)_CFLAGS = -fobjc-arc
+$(TWEAK_NAME)_PRIVATE_FRAMEWORKS = SpringBoardServices
 
 include $(THEOS_MAKE_PATH)/tweak.mk
 

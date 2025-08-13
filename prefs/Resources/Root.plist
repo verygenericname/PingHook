@@ -26,6 +26,18 @@
 		</dict>
 		<dict>
 			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>label</key>
+			<string>Lock Device Enabled</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.nathan.pinghook</string>
+			<key>key</key>
+			<string>isLockDeviceEnabled</string>
+		</dict>
+		<dict>
+			<key>cell</key>
 			<string>PSEditTextCell</string>
 			<key>label</key>
 			<string>File Path</string>

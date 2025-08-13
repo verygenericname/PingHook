@@ -1,6 +1,6 @@
 Package: com.nathan.pinghooker
 Name: PingHooker
-Version: 0.0.1
+Version: 1.2
 Architecture: iphoneos-arm
 Description: An awesome MobileSubstrate tweak!
 Maintainer: Nathan Senter
